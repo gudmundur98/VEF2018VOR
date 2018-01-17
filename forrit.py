@@ -2,9 +2,9 @@ from bottle import route, run, os
 
 @route("/")
 def index():
-    return "<a href = 'about'> About</a>" \
-           "<a href = 'bio'> Biography</a>" \
-           "<a href = 'pictures'> Pictures</a>"
+    return "<a href = 'about'> About</a>"(\n) \
+           "<a href = 'bio'> Biography</a>"(\n) \
+           "<a href = 'pictures'> Pictures</a>"(\n)
 
 @route("/about")
 def about():
